@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원삭제</title>
+<style>
+button {
+	background-color: pink;
+}
+</style>
+</head>
+<body>
+	
+	<h3>회원삭제 화면입니다.</h3>
+	<hr color="red">
+	<form action="/web02/jsp/db_delete.jsp">
+		<table>
+			<tr>
+				<td>아이디:</td>
+				<td><input type="text" name="id"></td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align: center;">
+					<button style="background: gold; border-radius: 10px 10px 10px 10px;">회원수정 처리요청</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+	<a href="/web02/jsp/db_delete.jsp?id=apple">apple탈퇴하기</a>
+
+</body>
+</html>
