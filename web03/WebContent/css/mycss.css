@@ -1,0 +1,56 @@
+@charset "UTF-8";
+#total {
+	border: solid 1px black;
+	width: 1000px;
+	height: 1000px;
+	margin: auto;
+}
+
+#top {
+	width: 1000px;
+	background-color: pink;
+	height: 100px;
+	margin: auto;
+}
+
+#top2 {
+	width: 200px;
+	height: 100px;
+	background-color: navy;
+	color: white;
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	border-radius: 50px 0 50px 0;
+	font-size: 20px;
+	text-align: center;
+}
+
+#center {
+	height: 600px;
+	background-color: gray;
+}
+
+ul {
+	margin: auto;
+}
+
+li {
+	list-style: none;
+	float: left; /* 세로정렬을 가로정렬로 만들기 */
+	padding: 10px;
+	font-size: 30px;
+	border: solid 1px black;
+	margin-top: 20px;
+	margin-left: 30px;
+	background-color: olive;
+}
+
+li:nth-child(2n+1) {
+	background-color: teal;
+}
+
+li:hover {
+	background-color: purple;
+	border-radius: 20px;
+}

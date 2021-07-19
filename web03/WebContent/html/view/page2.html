@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>page2</title>
+</head>
+<body>
+
+	숫자1: <input type="number" id="n1"> <br>
+	숫자2: <input type="number" id="n2"> <br>
+	<button onclick="add()">더하기 기능 처리</button>
+	
+	<hr>
+	
+	아이디: <input type="text" name="id" id="id" value="root"> <br>
+	패스워드: <input type="text" name="pw" id="pw"> <br>
+	<button onclick="login()">로그인 기능 처리</button>
+	
+	<hr color="red">
+	
+	<div id="div"></div>
+
+	<script>
+		// 변수 타입을 선언하지 않음
+		function add() {
+			// n1, n2 입력한 값을 가지고 와야함.
+			n1Value = document.getElementById('n1').value;
+			n2Value = document.getElementById('n2').value;
+			
+			x = parseInt(n1Value);
+			y = parseInt(n2Value);
+			
+			alert(x + y + '=> 더하기 기능 처리창임.');
+		}
+		
+		function login() {
+			// id/pw 입력하는 값을 가지고 와야함.
+			idTag = document.getElementById('id');
+			pwTag = document.getElementById('pw');
+			divTag = document.getElementById('div');
+			
+			idValue = idTag.value;
+			pwValue = pwTag.value;
+			
+			// alert('입력한 id값은' + idValue);
+			// alert('입력한 pw값은' + pwValue);
+			
+			id1 = 'root';
+			pw1 = '1234';
+			result = '';
+			
+			if (idValue == id1 && pwValue == pw1) {
+				result = '로그인 성공';
+			} else {
+				result = '로그인 실패';
+			}
+			
+			divTag.innerHTML = '<font color=red>' + result + '</font>';
+		}
+	</script>
+
+</body>
+</html>
